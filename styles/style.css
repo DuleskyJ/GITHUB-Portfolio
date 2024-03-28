@@ -1,0 +1,101 @@
+body {
+    background: #818181
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #242526;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation {
+    font-size: 20px;
+    color: #404040;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.navigation a { 
+    font-size: 18px;
+    color: #ffffff; /* Set the color to white targetting <a> elements */
+    text-decoration: none; /* remove underline */
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navigation a:hover
+.navigation a.active {
+    color: #192734;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #001eff;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.home-content .buttonbox {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    background: #404040;
+}
+
+.buttonbox a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #818181;
+    border: 2px solid #818181; 
+    border-radius: 8px;
+    font-size: 18px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
