@@ -52,9 +52,10 @@ body {
 
 .home {
     height: 100vh;
+    justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 0 0 10%;
 }
 
 .home-content {
@@ -62,12 +63,14 @@ body {
 }
 
 .home-content h1 {
-    font-size: 50px;
+    display: flex;
+    margin-right: 25px;
+    font-size: 45px;
     font-weight: 700;
 }
 
 .home-content h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     color: #001eff;
 }
@@ -99,3 +102,19 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+#imageofme {
+    display: flex;
+    width: 450px;
+    height: auto;
+}
+
+.home img {
+    /* CSS styles */
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    transform: translateX(20px) translateY(20px);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
