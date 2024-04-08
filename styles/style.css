@@ -1,5 +1,5 @@
 body {
-    background: #818181
+    background: #818181;
 }
 
 .header {
@@ -24,7 +24,7 @@ body {
 
 .name {
     font-size: 25px;
-    color: #ededed;
+    color: #C0C0C0;
     text-decoration: none;
     font-weight: 600;
 }
@@ -51,56 +51,70 @@ body {
 }
 
 .home {
-    height: 100vh;
-    justify-content: space-between;
+    height: 30vh;
     display: flex;
     align-items: center;
     padding: 0 0 0 10%;
 }
 
-.home-content {
-    max-width: 600px;
-}
-
 .home-content h1 {
-    display: flex;
     margin-right: 25px;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 700;  
+    line-height: 1.2;
 }
 
 .home-content h3 {
     font-size: 25px;
     font-weight: 700;
-    color: #001eff;
+    color: #fffffb;
 }
 
 .home-content p {
     font-size: 18px;
+    margin: 5px 0 10px;
 }
 
-.home-content .buttonbox {
-    display: flex;
+.home-content {
     justify-content: space-between;
-    width: 345px;
-    height: 50px;
-    background: #404040;
+    width: 625px;
+    height: 1vh;
+    background: #818181;
 }
 
-.buttonbox a {
+.buttonbox {
+    display: none;
+}
+
+.btn {
     display: inline-flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 100%;
     background: #818181;
-    border: 2px solid #818181; 
-    border-radius: 8px;
+    border: 2px solid #98e7f9; 
     font-size: 18px;
     color: #081b29;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: background-color 2s ease;
+}
+
+.btn:hover {
+    background-color: #98e7f9;
+}
+
+.dropLinks {
+    display: none;
+    flex-direction: column;
+    height: 75px;
+}
+
+.buttonbox:checked + .btn + .dropLinks {
+    display: flex;
+    flex-direction: column;
 }
 
 #imageofme {
@@ -110,7 +124,6 @@ body {
 }
 
 .home img {
-    /* CSS styles */
     position: absolute;
     top: 60px;
     right: 50px;
@@ -118,3 +131,4 @@ body {
     margin-left: 20px;
     margin-top: 20px;
   }
+
