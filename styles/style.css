@@ -1,6 +1,10 @@
 body {
     background: #818181;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -17,10 +21,7 @@ body {
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 .name {
@@ -44,8 +45,8 @@ body {
 
 .navigation a { 
     font-size: 18px;
-    color: #ffffff; /* Set the color to white targetting <a> elements */
-    text-decoration: none; /* remove underline */
+    color: #ffffff; 
+    text-decoration: none; 
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
@@ -56,12 +57,7 @@ body {
     color: #192734;
 }
 
-#home {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 20%;
-}
+
 
 #about {
     padding-top: 70px;
@@ -76,7 +72,7 @@ body {
 }
 
 .home-content h1 {
-    margin: 0;
+    margin-top: 20px 0 10px;
     margin-right: 1px;
     font-size: 45px;
     font-weight: 700;  
@@ -99,9 +95,15 @@ body {
 .home-content {
     height: auto;
     background: #818181;
-    align-items: center;
     padding: 0 20% 0 20%;
     text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .buttonbox {
@@ -140,10 +142,9 @@ body {
 }
 
 #imageofme {
-    display: flex;
-    align-items: center;
-    width: 900px;
+    max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .github-link {
@@ -151,10 +152,17 @@ body {
 }
 
 #firstapp {
-    width: 550px;
+    width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
 
 
 /* Responsive styles for smaller screens */
@@ -208,11 +216,13 @@ body {
     }
     
     #imageofme {
-        width: 40%; 
-        margin-top: 240px;
-    
+        width: 65%; 
     }
     
+    .content-wrapper{
+        padding: 0 20px;
+    }
+
     .home img {
         order: 1;
         width: 100%;
