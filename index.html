@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- Link to my CSS -->
@@ -21,33 +20,33 @@
     <header class="header">
         <a href="#" class="name">Jaden D.</a>
           <nav class="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
           </nav>
     </header>
 
-    <section class="home">
-      <div class="home-content">
+<section id="home">
+  <img id="imageofme" src="/assets/021_06.jpg" alt="A photo of me">
+</section>
+  <div class="home-content">
           <h1> Hello, I'm Jaden Dulesky</h1>
           <h3> Learning as a Fullstack Developer</h3>
-          <p> Nice to see you here! Here will be my deployment page for all future projects. I've just turned 21 and have managed at Dutch Bros since high school. It was an extreme chapter that I'm beyond grateful for. Growing up, my friends and family pursued computer-related fields. It's time I advance and create what I've been utilizing for all my life! 
+          <p id="about"> Nice to see you here! Here will be my deployment page for all future projects. I've just turned 21 and have managed at Dutch Bros since high school. It was an extreme chapter that I'm beyond grateful for. Growing up, my friends and family pursued computer-related fields. It's time I advance and create what I've been utilizing for all my life! 
           </p>
+    <section class="contact" id="contact">
         <input type="checkbox" id="buttonbox" class="buttonbox">
         <label for="buttonbox" class="btn"> Contact Me </label>
           <div class="dropLinks">
-            <div class="github-link">
-           GitHub:<a href="https://github.com/DuleskyJ?tab=repositories"> GITHUB! </a> <i class="ri-github-fill"></i>
-            </div>
-          <p>Email:</i>jdkyaz@gmail.com<i class="ri-mail-line"></i></p>
+              <div class="github-link">
+              GitHub:<a href="https://github.com/DuleskyJ?tab=repositories"> GITHUB! </a> <i class="ri-github-fill"></i>
+              </div>
+            <p>Email:</i>jdkyaz@gmail.com<i class="ri-mail-line"></i></p>
           </div>
-        </div>
-      
+  </div>  
 
-      <img id="imageofme" src="/assets/021_06.jpg" alt="A photo of me">
-
-    </section>
+        </section>
   </section>
   </body>
 </html>

@@ -1,5 +1,6 @@
 body {
     background: #818181;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -35,6 +36,11 @@ body {
     font-weight: 500;
     margin-left: 30px;
 }
+.navlink {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
 
 .navigation a { 
     font-size: 18px;
@@ -50,15 +56,19 @@ body {
     color: #192734;
 }
 
-.home {
-    height: 30vh;
+#home {
+    height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 0 0 10%;
+    padding: 0 0 0 20%;
 }
 
+#about{
+    display: flex;
+    flex-direction: column;
+}
 .home-content h1 {
-    margin-right: 25px;
+    margin-right: 1px;
     font-size: 45px;
     font-weight: 700;  
     line-height: 1.2;
@@ -73,13 +83,15 @@ body {
 .home-content p {
     font-size: 18px;
     margin: 5px 0 10px;
+    text-align: center;
 }
 
 .home-content {
-    justify-content: space-between;
-    width: 625px;
-    height: 1vh;
+    height: auto;
     background: #818181;
+    align-items: center;
+    padding: 0 20% 0 20%;
+    text-align: center;
 }
 
 .buttonbox {
@@ -119,19 +131,80 @@ body {
 
 #imageofme {
     display: flex;
-    width: 450px;
+    align-items: center;
+    width: 900px;
     height: auto;
 }
 
 .home img {
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    transform: translateX(20px) translateY(20px);
-    margin-left: 20px;
-    margin-top: 20px;
   }
 
 .github-link {
-    display: inline-flex;
+    text-align: center;
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+    
+    .name {
+        font-size: 20px;
+    }
+    
+    .navigation {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    
+    .home {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    
+    .home-content {
+        width: 100%;
+        max-width: 600px; 
+        margin-top: 80px;
+    }
+    
+    .home-content h1 {
+        font-size: 30px;
+    }
+    
+    .home-content h3 {
+        font-size: 20px;
+    }
+    
+    .home-content p {
+        font-size: 16px;
+    }
+    
+    .buttonbox {
+        display: inline-block; 
+    }
+    
+    .btn {
+        width: auto;
+    }
+    
+    .dropLinks {
+        height: auto; 
+    }
+    
+    #imageofme {
+        width: 40%; 
+        margin-top: 240px;
+    
+    }
+    
+    .home img {
+        order: 1;
+        width: 100%;
+        transform: none;
+        margin-top: 20px;
+    }
 }
