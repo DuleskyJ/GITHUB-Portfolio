@@ -2,3 +2,5 @@ Hi! Welcome to my Portfolio page where I'll throw my updated projects that I com
 
 Screenshot(s) of deployed application:
 ![](assets/Screenshot%20(15).png)
+![](assets/Screenshot%20(16).png)
+![](assets/Screenshot%20(17).png)
